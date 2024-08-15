@@ -31,7 +31,7 @@ def create_app(test_config=None):
 
     from . import db
     db.init_app(app)
-    from . import car
-    app.register_blueprint(car.bp)
+    from . import catfeteria
+    app.register_blueprint(catfeteria.bp)
 
     return app
